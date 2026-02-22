@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMI Clothing</title>
+    <link rel="icon" href="../../img/UmiLogoW.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../estilos/estiloscss.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <header>
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container d-flex flex-column align-items-center">
+            <div class="d-flex align-items-center">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../img/UmiLogoB.png" width="40" height="40" class="d-inline-block align-middle me-2">
+                    <span class="fs-4 align-middle">UMI Clothing</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse mt-2" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            TIENDA
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../header/hoodie.html">SUDADERAS</a></li>
+                            <li><a class="dropdown-item" href="../header/shirt.html">CAMISETAS</a></li>
+                            <li><a class="dropdown-item" href="../header/pants.html">PANTALONES</a></li>
+                            <li><a class="dropdown-item" href="../header/accesories.html">ACCESORIOS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../header/collections.html">COLECCIONES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../header/loyalty.html">UMI LOYALTY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../header/contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link p-0" href="../header/login.html">
+                            <img src="../../img/perfil.png" width="35" height="35" class="d-inline-block align-middle">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cart.html">
+                            <img src="../../img/carritocompra.png" width="25" height="25">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <div class="container fs-5">
+        <h1 id="spa">Solicitud para aplicar a Atención al Cliente</h1>
+        <br>
+        <div class="mb-3">
+            <label for="Nombre" class="form-label">Nombre:*</label>
+            <input type="text" class="form-control" id="Nombre" required>
+        </div>
+        <div class="mb-3">
+            <label for="Apellidos" class="form-label">Apellidos:*</label>
+            <input type="email" class="form-control" id="Apellidos" required>
+        </div>
+        <div class="mb-3">
+            <label for="numerotelefono" class="form-label">Número de telefono:*</label>
+            <input type="number" class="form-control" id="numerotelefono" placeholder="+00 000 00 00 00" required>
+        </div>
+        <div class="mb-3">
+            <label for="Email" class="form-label">Correo electrónico:*</label>
+            <input type="email" class="form-control" id="Email" required>
+        </div>
+        <div class="mb-3">
+            <label for="urlpersonal" class="form-label">URL personal:</label>
+            <input type="text" class="form-control" id="urlpersonal">
+        </div>
+        <br>
+        <h2 id="spa">Información de la aplicación</h2>
+        <br>
+        <div class="mb-3">
+            <label for="cdp" class="form-label">Carta de presentación:</label>
+            <textarea class="form-control" id="cdp" rows="4"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="CV-in" class="form-label">Currículum:*</label>
+            <input class="form-control" type="file" id="CV-in" required>
+        </div>
+        <div class="mb-3">
+            <label for="CV-in" class="form-label">Foto de perfil:*</label>
+            <input class="form-control" type="file" id="CV-in" required>
+        </div>
+        <br>
+        <h2 id="spa">Preguntas</h2>
+        <br>
+        <div class="mb-3">
+            <label for="question1" class="form-label">¿Cuál es tu principal motivación para el proyecto y el puesto?*</label>
+            <textarea class="form-control" id="question1" rows="4" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="question2" class="form-label">¿Cómo definirías tu nivel de experiencia?*</label>
+            <textarea class="form-control" id="question2" rows="4" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="question3" class="form-label">¿Cómo ha sido tu experiencia en roles similares?*</label>
+            <textarea class="form-control" id="question3" rows="4" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="question4" class="form-label">¿Cuál sería tu fecha ideal de incorporación?*</label>
+            <textarea class="form-control" id="question4" rows="4"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="question5" class="form-label">¿Qué expectativas salariales tienes para esta posición? (Bruto/año)*</label>
+            <textarea class="form-control" id="question5" rows="4"></textarea>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="CheckTerminosCondiciones" required>
+            <label class="form-check-label" for="CheckTerminosCondiciones">He leido y acepto los <span><a href="../footer/terminosycondiciones.html">Terminos y condiciones</a></span>*</label>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="CheckTerminosCondiciones" checked>
+            <label class="form-check-label" for="CheckTerminosCondiciones">Si, UMI Clothing puede agregarme al grupo de talentos y contactarme sobre futuras oportunidades laborales.</label>
+        </div>
+        <button type="submit" class="btn btn-primary mb-5 mt-3">Aplicar</button>
+    </div>
+    <footer class="bg-dark text-light pt-5 pb-3">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <img src="../../img/envio.png" alt="Envios Gratuitos" class="mb-2" style="width: 60px; height: auto;">
+                    <h4>ENVIOS GRATUITOS</h4>
+                    <p>Mira las condiciones <a href="../footer/envios.html" class="text-decoration-none">aqui</a>.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="../../img/cambios.png" alt="Cambios y Devoluciones" class="mb-2" style="width: 60px; height: auto;">
+                    <h4>CAMBIOS Y DEVOLUCIONES FÁCILES</h4>
+                    <p>Click <a href="../footer/condiciones.html" class="text-decoration-none">aqui</a> para más información.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="../../img/pagoseguro.png" alt="Pago Seguro" class="mb-2" style="width: 60px; height: auto;">
+                    <h4>MÉTODO DE PAGO SEGURO</h4>
+                    <p>Visa, Mastercard, Paypal, y más.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-4 mb-4 text-center text-md-start">
+                    <h4>UMI CLOTHING</h4>
+                    <p>CONSTRUYENDO UNA COMUNIDAD GLOBAL, ABRAZANDO LA ESENCIA DE LA MODA URBANA DE CIUDADES ICÓNICAS ALREDEDOR DEL MUNDO.</p>
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                        <a href="https://www.instagram.com/umi.clothing_/" target="_blank" class="me-2">
+                            <img src="../../img/instagram.png" alt="Instagram" width="25">
+                        </a>
+                        <a href="https://x.com/UmiClothing" target="_blank" class="me-2">
+                            <img src="../../img/twitter.png" alt="Twitter" width="25">
+                        </a>
+                        <a href="https://www.youtube.com/@UMIClothing" target="_blank" class="me-2">
+                            <img src="../../img/youtube.png" alt="YouTube" width="25">
+                        </a>
+                        <a href="https://www.tiktok.com/@umi.clothing_?lang=es" target="_blank">
+                            <img src="../../img/tiktok.png" alt="TikTok" width="25">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 text-center text-md-start">
+                    <h4>ACERCA DE</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="../footer/faqs.html" class="text-light text-decoration-none">FAQs</a></li>
+                        <li><a href="../header/contacto.html" class="text-light text-decoration-none">Contacto</a></li>
+                        <li><a href="../footer/envios.html" class="text-light text-decoration-none">Política De Envios</a></li>
+                        <li><a href="../footer/wwus.html" class="text-light text-decoration-none">Trabaja Con Nosotros</a></li>
+                        <li><a href="../footer/wwus.html" class="text-light text-decoration-none">Internships</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4 text-center text-md-start">
+                    <h4>LEGAL</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="../footer/condiciones.html" class="text-light text-decoration-none">Política De Devoluciones</a></li>
+                        <li><a href="../footer/politicaprivacidad.html" class="text-light text-decoration-none">Política De Privacidad</a></li>
+                        <li><a href="../footer/politicacookies.html" class="text-light text-decoration-none">Política De Cookies</a></li>
+                        <li><a href="../footer/terminosycondiciones.html" class="text-light text-decoration-none">Términos Y Condiciones</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Aviso Legal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <img src="../../img/UmiLogoW.png" alt="UMI Logo" width="60" class="mb-2">
+            <h1 style="color: white; font-size: 1.5rem;">UMI CLOTHING</h1>
+        </div>
+    </footer>    
+    </body>
+    </html>

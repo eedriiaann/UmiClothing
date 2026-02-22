@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMI Clothing - Producto</title>
+    <link rel="icon" href="../../img/UmiLogoW.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../estilos/estiloscss.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container d-flex flex-column align-items-center">
+                <div class="d-flex align-items-center">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../index.html">
+                        <img src="../../img/UmiLogoB.png" width="70" height="70" class="d-inline-block align-middle me-2">
+                        <span class="fs-2 align-middle">UMI Clothing</span>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse mt-2" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5" href="../../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active fs-5" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                TIENDA
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../header/hoodie.html">SUDADERAS</a></li>
+                                <li><a class="dropdown-item" href="../header/shirt.html">CAMISETAS</a></li>
+                                <li><a class="dropdown-item" href="../header/pants.html">PANTALONES</a></li>
+                                <li><a class="dropdown-item" href="../header/accesories.html">ACCESORIOS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5" href="../header/collections.html">COLECCIONES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5" href="../header/loyalty.html">UMI LOYALTY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5" href="../header/contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center p-3 pt-0 pb-0">
+                            <a class="nav-link p-0" href="../header/login.html">
+                                <img src="../../img/perfil.png" width="35" height="35" class="d-inline-block align-middle">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../header/cart.html">
+                                <img src="../../img/carritocompra.png" width="25" height="25">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+            <div class="carrusel-container">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../../img/collections/umiessentials/UmiShirtGreenFront.png" class="d-block img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../img/collections/umiessentials/UmiGreenShirt.png" class="d-block img-fluid">
+                        </div>
+                        <div class="carousel-indicators">
+                            <img src="../../img/collections/umiessentials/UmiShirtGreenFront.png" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active img-thumbnail">
+                            <img src="../../img/collections/umiessentials/UmiGreenShirt.png" data-bs-target="#carouselExample" data-bs-slide-to="1" class="img-thumbnail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="col-md-6">
+                <h2 id="product-name">Camiseta Umi Verde</h2>
+                <p id="product-description">Una camiseta verde</p>
+                <h4 class="text-success" id="product-price">19.99 €</h4>
+                <hr>
+                <label for="size">Tamaño:</label>
+                <select class="form-select" id="size">
+                    <option value="S">S</option>
+                    <option value="M" selected>M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="color">Color:</label>
+                <select class="form-select" id="color">
+                    <option value="Verde" selected>Verde</option>
+                    <option value="Blanco">Blanco</option>
+                    <option value="Negro">Negro</option>
+                </select>
+                <div class="mt-3">
+                    <label for="quantity">Cantidad:</label>
+                    <input type="number" id="quantity" class="form-control" value="1" min="1" max="10">
+                </div>
+                <div class="mt-3">
+                <label>Tabla de tallas:</label>
+                    <img class="img-fluid" src="../../img/camisetassizechat.png">
+                </div>
+
+                <button class="btn btn-dark mt-3 w-100" id="add-to-cart-btn">Añadir al Carrito</button>
+            </div>
+        </div>
+    </div>
+    <div class="text-center my-5">
+        <div class="d-flex align-items-center justify-content-center">
+            <hr class="w-50 mx-2">
+            <p class="fw-bold fs-4 mb-0">RECOMENDADOS</p>
+            <hr class="w-50 mx-2">
+        </div>
+    </div>
+    <section class="container text-center mb-5">
+        <div class="row g-4">
+            <div class="col-md-3 prenda-container">
+                <div class="card border-0 cardprenda">
+                    <a href="../prendas/Sudadera Down to Luck Smokey Grey.html" class="prenda-link link-none">
+                        <div class="prenda-back">
+                            <img src="../../img/sudaderagris.png" class="card-img-top img-fluid">
+                        </div>
+                        <div class="prenda-front">
+                            <img src="../../img/sudaderagrisfront.png" class="card-img-top img-fluid">
+                        </div>
+                        <div class="card-body card-bodyprenda">
+                            <h2 class="card-title fs-6 mt-2">Sudadera Down to Luck Smokey Grey</h2>
+                            <p class="card-text fw-bold">79.99€</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 prenda-container">
+                <div class="card border-0 cardprenda">
+                    <a href="../prendas/Sudadera Down to Luck.html" class="prenda-link link-none">
+                        <div class="prenda-back">
+                            <img src="../../img/sudaderaverde.png" class="card-img-top img-fluid">
+                        </div>
+                        <div class="prenda-front">
+                            <img src="../../img/sudaderaverdefront.png" class="card-img-top img-fluid">
+                        </div>
+                        <div class="card-body card-bodyprenda">
+                            <h2 class="card-title fs-6 mt-2">Sudadera Down to Luck</h2>
+                            <p class="card-text fw-bold">79.99€</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 prenda-container">
+                <div class="card border-0 cardprenda">
+                    <a href="../prendas/Sudadera Down to Luck Black.html" class="prenda-link link-none">
+                        <div class="prenda-back">
+                            <img src="../../img/sudaderanegra.png" class="card-img-top img-fluid">
+                        </div>
+                        <div class="prenda-front">
+                            <img src="../../img/sudaderanegrafront.png" class="card-img-top img-fluid">
+                        </div>
+                        <div class="card-body card-bodyprenda">
+                            <h2 class="card-title fs-6 mt-2">Sudadera Down to Luck Black</h2>
+                            <p class="card-text fw-bold">79.99€</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 prenda-container">
+                <div class="card border-0 cardprenda">
+                    <a href="../prendas/Sudadera Down to Luck Bronze.html" class="prenda-link link-none">
+                        <div class="prenda-back">
+                            <img src="../../img/sudaderaroja.png" class="card-img-top img-fluid">
+                        </div>
+                        <div class="prenda-front">
+                            <img src="../../img/sudaderarojafront.png" class="card-img-top img-fluid">
+                        </div>
+                        <div class="card-body card-bodyprenda">
+                            <h2 class="card-title fs-6 mt-2">Sudadera Down to Luck Bronze</h2>
+                            <p class="card-text fw-bold">79.99€</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark text-white py-5">
+        <div class="text-center mb-5">
+            <div class="d-flex align-items-center justify-content-center">
+                <hr class="w-50 mx-2 border-light">
+                <p class="fw-bold fs-4 mb-0">INSPIRATE</p>
+                <hr class="w-50 mx-2 border-light">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="../../img/shopthelook.png" class="img-fluid rounded hover">
+                </div>
+                <div class="col-md-4">
+                    <img src="../../img/shopthelook2.png" class="img-fluid rounded hover">
+                </div>
+                <div class="col-md-4">
+                    <img src="../../img/shopthelook3.png" style="overflow: hidden; object-fit: cover; height: 100%;" class="img-fluid rounded hover">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-light pt-5 pb-3">
+        <hr class="pb-5 m-0">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <img src="../../img/envio.png" alt="Envios Gratuitos" class="mb-2" style="width: 60px; height: auto;">
+                    <h4>ENVIOS GRATUITOS</h4>
+                    <p>Mira las condiciones <a href="../footer/envios.html" class="text-decoration-none">aqui</a>.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="../../img/cambios.png" alt="Cambios y Devoluciones" class="mb-2" style="width: 60px; height: auto;">
+                    <h4>CAMBIOS Y DEVOLUCIONES FÁCILES</h4>
+                    <p>Click <a href="../footer/condiciones.html" class="text-decoration-none">aqui</a> para más información.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="../../img/pagoseguro.png" alt="Pago Seguro" class="mb-2" style="width: 60px; height: auto;">
+                    <h4>MÉTODO DE PAGO SEGURO</h4>
+                    <p>Visa, Mastercard, Paypal, y más.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-4 mb-4 text-center">
+                    <h4>UMI CLOTHING</h4>
+                    <p>CONSTRUYENDO UNA COMUNIDAD GLOBAL, ABRAZANDO LA ESENCIA DE LA MODA URBANA DE CIUDADES ICÓNICAS ALREDEDOR DEL MUNDO.</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="https://www.instagram.com/umi.clothing_/" target="_blank" class="me-2">
+                            <img src="../../img/instagram.png" alt="Instagram" width="25">
+                        </a>
+                        <a href="https://x.com/UmiClothing" target="_blank" class="me-2">
+                            <img src="../../img/twitter.png" alt="Twitter" width="25">
+                        </a>
+                        <a href="https://www.youtube.com/@UMIClothing" target="_blank" class="me-2">
+                            <img src="../../img/youtube.png" alt="YouTube" width="25">
+                        </a>
+                        <a href="https://www.tiktok.com/@umi.clothing_?lang=es" target="_blank">
+                            <img src="../../img/tiktok.png" alt="TikTok" width="25">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 text-center">
+                    <h4>ACERCA DE</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="../footer/faqs.html" class="text-light text-decoration-none footer-link">FAQs</a></li>
+                        <li><a href="../header/contacto.html" class="text-light text-decoration-none">Contacto</a></li>
+                        <li><a href="../footer/envios.html" class="text-light text-decoration-none">Política De Envios</a></li>
+                        <li><a href="../footer/wwus.html" class="text-light text-decoration-none">Trabaja Con Nosotros</a></li>
+                        <li><a href="../footer/wwus.html" class="text-light text-decoration-none">Internships</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <h4>LEGAL</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="../footer/condiciones.html" class="text-light text-decoration-none">Política De Devoluciones</a></li>
+                        <li><a href="../footer/politicaprivacidad.html" class="text-light text-decoration-none">Política De Privacidad</a></li>
+                        <li><a href="../footer/politicacookies.html" class="text-light text-decoration-none">Política De Cookies</a></li>
+                        <li><a href="../footer/terminosycondiciones.html" class="text-light text-decoration-none">Términos Y Condiciones</a></li>
+                        <li><a href="../footer/avisolegal.html" class="text-light text-decoration-none">Aviso Legal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <img src="../../img/UmiLogoW.png" alt="UMI Logo" width="60" class="mb-2">
+            <h1 style="color: white; font-size: 1.5rem;">UMI CLOTHING</h1>
+        </div>
+    </footer>
+
+    <script>
+        // Manejo del carrito de compras
+        document.getElementById('color').addEventListener('change', function() {
+        const selectedColor = this.value;
+        });
+        
+        const addToCartBtn = document.getElementById('add-to-cart-btn');
+
+        addToCartBtn.addEventListener('click', function() {
+            const name = 'Camiseta Umi Verde';
+            const price = 19.99;
+            const size = document.getElementById('size').value;
+            const color = document.getElementById('color').value;
+            const quantity = parseInt(document.getElementById('quantity').value);
+
+            // Crear el objeto del producto
+            const product = {
+                name,
+                price,
+                size,
+                color,
+                quantity,
+                image: '../../img/collections/umivalentine/loveyoukissfront.png'
+            };
+
+            // Obtener el carrito del localStorage, si existe
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Comprobar si el producto ya está en el carrito
+            const productIndex = cart.findIndex(item => item.name === product.name && item.size === product.size && item.color === product.color);
+
+            if (productIndex === -1) {
+                // Si no existe, añadir el producto al carrito
+                cart.push(product);
+            } else {
+                // Si existe, actualizar la cantidad
+                cart[productIndex].quantity += quantity;
+            }
+
+            // Guardar el carrito actualizado en el localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Mensaje de éxito
+            alert('Producto añadido al carrito!');
+        });
+    </script>
+</body>
+</html>
